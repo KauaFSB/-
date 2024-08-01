@@ -1,0 +1,10 @@
+dotnet new mvc -o Pokedex
+cd Pokedex 
+
+Ctrl + Shift + P - NuGet
+
+hMicrosoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+Pomelo.EntityFrameworkCore.MySql
+Microsoft.AspNetCore.Identity.EntityFrameworkCore 

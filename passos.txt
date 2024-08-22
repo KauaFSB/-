@@ -1,5 +1,5 @@
-git config --global user.name GalloJunior
-git config --global user.email gallojunior
+git config --global user.name "NOME"
+git config --global user.email "EMAIL"
 
 dotnet new mvc -o Pokedex
 
@@ -8,8 +8,12 @@ cd Pokedex
 dotnet watch run
 
 Abrir Nuget Gallery
-Ctrl + Shift + P - Pesquisar Nuget
-
+    Ctrl + Shift + P - Pesquisar Nuget e baixar:
+        Microsoft.EntityFrameworkCore
+        Microsoft.EntityFrameworkCore.Design
+        Microsoft.EntityFrameworkCore.Tools
+        Pomelo.EntityFrameworkCore.MySql
+        Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 dotnet tool install --global dotnet-ef --version 8.0.7
 
@@ -18,4 +22,3 @@ dotnet tool update --global dotnet-ef --version 8.0.7
 dotnet ef migrations add inicializando-banco
 
 dotnet ef database update
-

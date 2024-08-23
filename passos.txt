@@ -22,3 +22,6 @@ dotnet tool update --global dotnet-ef --version 8.0.7
 dotnet ef migrations add inicializando-banco
 
 dotnet ef database update
+
+dotnet tool install -g dotnet-aspnet-codegenerator (instalar)
+dotnet-aspnet-codegenerator controller -name TiposController -m Tipo -dc AppDbContext -l "~/Views/Shared/_LayoutAdmin.cshtml" --relativeFolderPath Controllers

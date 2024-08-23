@@ -335,28 +335,28 @@ namespace Pokedex.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "12bb0415-1a47-4cfc-b222-d836479221c7", null, "Administrador", "ADMINISTRADOR" },
-                    { "41bc6c6e-5dad-414d-8c00-6675c331fdf1", null, "Usuário", "USUÁRIO" }
+                    { "3684cadf-2d61-41aa-8cba-48d6b08de3f0", null, "Administrador", "ADMINISTRADOR" },
+                    { "b016a7cf-c804-4f4f-a1e4-cb397b8150a3", null, "Usuário", "USUÁRIO" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "bdf0d0e4-3430-4b28-a482-eb179fcfde0d", 0, "ce94779f-6259-463b-99fe-85f5985dccc2", "admin@pokedex.com", true, false, null, "ADMIN@POKEDEX.COM", "ADMIN", "AQAAAAIAAYagAAAAEK5KEbrYptbCB2MTJf022CmCQSsv5TdN9Suz0SWcUO8Ge2oUOfxIFOhjzkG7pcc3zg==", null, false, "d0ca21c1-a3d5-42b6-96f4-27711156a1b8", false, "Admin" });
+                values: new object[] { "1f3f4a29-8256-4ccd-8559-ce3b23327967", 0, "ca23711f-4b20-49bd-bb99-a5e3a2b024ee", "admin@pokedex.com", true, false, null, "ADMIN@POKEDEX.COM", "ADMIN", "AQAAAAIAAYagAAAAENuJLdN/7hVtG6heynLn4qskVZwhes8TRmOGitOesM4os5snBWzC4Boj3k9CQJqcSA==", null, false, "da175551-99ad-4436-8468-e6c44bef4b4e", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "12bb0415-1a47-4cfc-b222-d836479221c7", "bdf0d0e4-3430-4b28-a482-eb179fcfde0d" },
-                    { "41bc6c6e-5dad-414d-8c00-6675c331fdf1", "bdf0d0e4-3430-4b28-a482-eb179fcfde0d" }
+                    { "3684cadf-2d61-41aa-8cba-48d6b08de3f0", "1f3f4a29-8256-4ccd-8559-ce3b23327967" },
+                    { "b016a7cf-c804-4f4f-a1e4-cb397b8150a3", "1f3f4a29-8256-4ccd-8559-ce3b23327967" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "bdf0d0e4-3430-4b28-a482-eb179fcfde0d", new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "/img/users/avatar.png", "José Antonio Gallo Junior" });
+                values: new object[] { "1f3f4a29-8256-4ccd-8559-ce3b23327967", new DateTime(1981, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "/img/users/avatar.png", "José Antonio Gallo Junior" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
